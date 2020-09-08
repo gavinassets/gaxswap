@@ -1,7 +1,7 @@
 {
   "name": "@uniswap/interface",
   "description": "Gaxswap Interface",
-  "homepage": "https://github.com/gavinassets/gaxswap",
+  "homepage": "https://gavinassets.github.io/gaxswap",
   "private": true,
   "devDependencies": {
     "@ethersproject/experimental": "^5.0.1",
