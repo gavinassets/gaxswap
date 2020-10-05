@@ -1,7 +1,7 @@
 {
-  "name": "@gaxswap/interface",
+  "name": "@uniswap/interface",
   "description": "Gaxswap Interface",
-  "homepage": "https://gavinassets.github.io/gaxswap",
+  "homepage": "https://app.gaxswap.com",
   "private": true,
   "devDependencies": {
     "@ethersproject/experimental": "^5.0.1",
@@ -108,6 +108,7 @@
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
+    "@portis/web3": "^2.0.0-beta.59",
     "gh-pages": "^3.1.0"
   }
 }

@@ -1,0 +1,33 @@
+这是测试网络goerli
+
+工厂地址：
+0x5c69bee701ef814a2b6a3edd4b1652cb9cc5aa6f => 0x20e9A4C77AB1251575515dEdb5573D7d4401ec28
+ 
+生成的hex:
+96e8ac4277198ff8b6f785478aa9a39f403cb768dd02cbee326c3e7da348845f => 1414b886c1c9ddb5e683b54a0784c9f8c6d2520675071e1390a69273b4bb204d
+
+搜索這2個，主要修改的內容
+export declare const FACTORY_ADDRESS = "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f";
+
+export const INIT_CODE_HASH = '0x1414b886c1c9ddb5e683b54a0784c9f8c6d2520675071e1390a69273b4bb204d'
+
+
+
+工厂合约里一定需要增加的
+ //配对合约的Bytecode的hash
+    bytes32 public constant INIT_CODE_PAIR_HASH = keccak256(abi.encodePacked(type(UniswapV2Pair).creationCode));
+	
+	这个生成的代码，会用到很多地址方的
+
+
+發布一個WETH的Token，方便使用    0xe6e35727918EbE037e98aF890a7b05D00163856d
+
+
+使用帐户6Address： 0xF2418AE0A538a91B32a4076d978eFa94f19C2D57
+重新发布一个工厂合约：   0xeb390067027E93006f9E85CCC5C4b0a4CCb2f9da
+hex_code: 0x1414b886c1c9ddb5e683b54a0784c9f8c6d2520675071e1390a69273b4bb204d
+
+
+下在這些，需要修改前端代碼，包括node_models
+发布路由器合约：   0x5C7876981683Db4497a20E0125ea28389Ba400D6
+需要修改hex的值：  0x1414b886c1c9ddb5e683b54a0784c9f8c6d2520675071e1390a69273b4bb204d
